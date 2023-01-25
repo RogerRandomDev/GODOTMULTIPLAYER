@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Node",
+"class": &"baseNet",
+"language": &"GDScript",
+"path": "res://networking/network.gd"
+}, {
+"base": "baseNet",
+"class": &"client",
+"language": &"GDScript",
+"path": "res://networking/client.gd"
+}, {
+"base": "baseNet",
+"class": &"host",
+"language": &"GDScript",
+"path": "res://networking/host.gd"
+}]
+_global_script_class_icons={
+"baseNet": "",
+"client": "",
+"host": ""
+}
+
+[application]
+
+config/name="multiplayerTest"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://icon.svg"

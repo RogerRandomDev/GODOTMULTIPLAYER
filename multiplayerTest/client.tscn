@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://741n851uhhy2"]
+
+[ext_resource type="Script" path="res://networking/client.gd" id="1_kb1cw"]
+[ext_resource type="Script" path="res://networking/network.gd" id="2_81bq3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="client" type="Node" parent="."]
+script = ExtResource("1_kb1cw")
+
+[node name="baseNet" type="Node" parent="."]
+script = ExtResource("2_81bq3")
